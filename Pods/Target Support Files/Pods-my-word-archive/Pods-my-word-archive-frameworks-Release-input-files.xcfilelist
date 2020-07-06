@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-my-word-archive/Pods-my-word-archive-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
+${BUILT_PRODUCTS_DIR}/pop/pop.framework

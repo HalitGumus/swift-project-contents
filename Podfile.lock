@@ -1,3 +1,36 @@
-PODFILE CHECKSUM: 4024bf016d56c3bf60d2ccb084a4485900fa2d30
+PODS:
+  - Koloda (5.0.1):
+    - pop (~> 1.0)
+  - NVActivityIndicatorView (5.0.0):
+    - NVActivityIndicatorView/Base (= 5.0.0)
+  - NVActivityIndicatorView/Base (5.0.0)
+  - pop (1.0.12)
+  - SwiftLint (0.39.2)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+
+DEPENDENCIES:
+  - Koloda
+  - NVActivityIndicatorView
+  - SwiftLint
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Koloda
+    - NVActivityIndicatorView
+    - pop
+    - SwiftLint
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+
+PODFILE CHECKSUM: 7a1e34121ffb24a89983b14004c4de19e963132f
 
 COCOAPODS: 1.9.3

@@ -6,5 +6,9 @@ target 'my-word-archive' do
   use_frameworks!
 
   # Pods for my-word-archive
-
+  pod 'SwiftMessages'
+  pod 'NVActivityIndicatorView'
+  pod 'Koloda'
+  pod 'SwiftLint'
+   
 end

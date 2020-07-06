@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,28 @@
 		12261FDE24B23E5C0013A22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12261FDC24B23E5C0013A22D /* Main.storyboard */; };
 		12261FE024B23E5E0013A22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12261FDF24B23E5E0013A22D /* Assets.xcassets */; };
 		12261FE324B23E5E0013A22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12261FE124B23E5E0013A22D /* LaunchScreen.storyboard */; };
+		12A53CCC24B3A1EC00151B91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CCB24B3A1EC00151B91 /* Colors.swift */; };
+		12A53CD424B3A21800151B91 /* ProximaNovaSoft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD024B3A21800151B91 /* ProximaNovaSoft-Regular.otf */; };
+		12A53CD524B3A21800151B91 /* ProximaNovaSoft-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD124B3A21800151B91 /* ProximaNovaSoft-Semibold.otf */; };
+		12A53CD624B3A21800151B91 /* ProximaNovaSoft-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD224B3A21800151B91 /* ProximaNovaSoft-Medium.otf */; };
+		12A53CD724B3A21800151B91 /* ProximaNovaSoft-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD324B3A21800151B91 /* ProximaNovaSoft-Bold.otf */; };
+		12A53CDF24B3A25F00151B91 /* Settings+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CDC24B3A25F00151B91 /* Settings+UserDefaults.swift */; };
+		12A53CE024B3A25F00151B91 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CDD24B3A25F00151B91 /* UIApplication+Extensions.swift */; };
+		12A53CE124B3A25F00151B91 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CDE24B3A25F00151B91 /* UIColor+Extensions.swift */; };
+		12A53CE924B3A27100151B91 /* TDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE324B3A27100151B91 /* TDLabel.swift */; };
+		12A53CEA24B3A27100151B91 /* TDAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE424B3A27100151B91 /* TDAlert.swift */; };
+		12A53CEB24B3A27100151B91 /* TDPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE524B3A27100151B91 /* TDPillButton.swift */; };
+		12A53CEC24B3A27100151B91 /* TDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE624B3A27100151B91 /* TDViewController.swift */; };
+		12A53CED24B3A27100151B91 /* TDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE724B3A27100151B91 /* TDButton.swift */; };
+		12A53CEE24B3A27100151B91 /* TDGradientPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE824B3A27100151B91 /* TDGradientPillButton.swift */; };
+		12A53CF524B3A28700151B91 /* GradientableOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF024B3A28600151B91 /* GradientableOptions.swift */; };
+		12A53CF624B3A28700151B91 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF124B3A28600151B91 /* GradientView.swift */; };
+		12A53CF724B3A28700151B91 /* UIView+Gradientable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF224B3A28600151B91 /* UIView+Gradientable.swift */; };
+		12A53CF824B3A28700151B91 /* Gradientable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF324B3A28600151B91 /* Gradientable.swift */; };
+		12A53CF924B3A28700151B91 /* GradientableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF424B3A28600151B91 /* GradientableAnimation.swift */; };
+		12A53CFE24B3A2AA00151B91 /* Borderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CFB24B3A2AA00151B91 /* Borderable.swift */; };
+		12A53CFF24B3A2AA00151B91 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CFC24B3A2AA00151B91 /* Animatable.swift */; };
+		12A53D0024B3A2AA00151B91 /* Shadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CFD24B3A2AA00151B91 /* Shadowable.swift */; };
 		2F1FD00CE2149C2607614B71 /* Pods_my_word_archive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499F575C896247D5C7836F5 /* Pods_my_word_archive.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +47,28 @@
 		12261FDF24B23E5E0013A22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12261FE224B23E5E0013A22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12261FE424B23E5E0013A22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A53CCB24B3A1EC00151B91 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		12A53CD024B3A21800151B91 /* ProximaNovaSoft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Regular.otf"; sourceTree = "<group>"; };
+		12A53CD124B3A21800151B91 /* ProximaNovaSoft-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Semibold.otf"; sourceTree = "<group>"; };
+		12A53CD224B3A21800151B91 /* ProximaNovaSoft-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Medium.otf"; sourceTree = "<group>"; };
+		12A53CD324B3A21800151B91 /* ProximaNovaSoft-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Bold.otf"; sourceTree = "<group>"; };
+		12A53CDC24B3A25F00151B91 /* Settings+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings+UserDefaults.swift"; sourceTree = "<group>"; };
+		12A53CDD24B3A25F00151B91 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		12A53CDE24B3A25F00151B91 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		12A53CE324B3A27100151B91 /* TDLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLabel.swift; sourceTree = "<group>"; };
+		12A53CE424B3A27100151B91 /* TDAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDAlert.swift; sourceTree = "<group>"; };
+		12A53CE524B3A27100151B91 /* TDPillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDPillButton.swift; sourceTree = "<group>"; };
+		12A53CE624B3A27100151B91 /* TDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDViewController.swift; sourceTree = "<group>"; };
+		12A53CE724B3A27100151B91 /* TDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDButton.swift; sourceTree = "<group>"; };
+		12A53CE824B3A27100151B91 /* TDGradientPillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDGradientPillButton.swift; sourceTree = "<group>"; };
+		12A53CF024B3A28600151B91 /* GradientableOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientableOptions.swift; sourceTree = "<group>"; };
+		12A53CF124B3A28600151B91 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		12A53CF224B3A28600151B91 /* UIView+Gradientable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Gradientable.swift"; sourceTree = "<group>"; };
+		12A53CF324B3A28600151B91 /* Gradientable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradientable.swift; sourceTree = "<group>"; };
+		12A53CF424B3A28600151B91 /* GradientableAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientableAnimation.swift; sourceTree = "<group>"; };
+		12A53CFB24B3A2AA00151B91 /* Borderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borderable.swift; sourceTree = "<group>"; };
+		12A53CFC24B3A2AA00151B91 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
+		12A53CFD24B3A2AA00151B91 /* Shadowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadowable.swift; sourceTree = "<group>"; };
 		8499F575C896247D5C7836F5 /* Pods_my_word_archive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_word_archive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA6471C23441D1858B1C84B /* Pods-my-word-archive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-word-archive.debug.xcconfig"; path = "Target Support Files/Pods-my-word-archive/Pods-my-word-archive.debug.xcconfig"; sourceTree = "<group>"; };
 		DBF916CCF6D672691A577856 /* Pods-my-word-archive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-word-archive.release.xcconfig"; path = "Target Support Files/Pods-my-word-archive/Pods-my-word-archive.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +107,8 @@
 		12261FD524B23E5C0013A22D /* my-word-archive */ = {
 			isa = PBXGroup;
 			children = (
+				12A53CDA24B3A24300151B91 /* UI */,
+				12A53CCA24B3A1DE00151B91 /* Assets */,
 				12261FD624B23E5C0013A22D /* AppDelegate.swift */,
 				12261FD824B23E5C0013A22D /* SceneDelegate.swift */,
 				12261FDA24B23E5C0013A22D /* ViewController.swift */,
@@ -74,13 +120,96 @@
 			path = "my-word-archive";
 			sourceTree = "<group>";
 		};
+		12A53CCA24B3A1DE00151B91 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CCE24B3A20200151B91 /* Fonts */,
+				12A53CCB24B3A1EC00151B91 /* Colors.swift */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		12A53CCE24B3A20200151B91 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CCF24B3A20E00151B91 /* ProximaNovaSoft */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		12A53CCF24B3A20E00151B91 /* ProximaNovaSoft */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CD324B3A21800151B91 /* ProximaNovaSoft-Bold.otf */,
+				12A53CD224B3A21800151B91 /* ProximaNovaSoft-Medium.otf */,
+				12A53CD024B3A21800151B91 /* ProximaNovaSoft-Regular.otf */,
+				12A53CD124B3A21800151B91 /* ProximaNovaSoft-Semibold.otf */,
+			);
+			name = ProximaNovaSoft;
+			sourceTree = "<group>";
+		};
+		12A53CDA24B3A24300151B91 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CFA24B3A29F00151B91 /* Protocols */,
+				12A53CDB24B3A24D00151B91 /* Common */,
+				12A53CE224B3A26600151B91 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		12A53CDB24B3A24D00151B91 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CDC24B3A25F00151B91 /* Settings+UserDefaults.swift */,
+				12A53CDD24B3A25F00151B91 /* UIApplication+Extensions.swift */,
+				12A53CDE24B3A25F00151B91 /* UIColor+Extensions.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		12A53CE224B3A26600151B91 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CEF24B3A27C00151B91 /* Gradient */,
+				12A53CE424B3A27100151B91 /* TDAlert.swift */,
+				12A53CE724B3A27100151B91 /* TDButton.swift */,
+				12A53CE824B3A27100151B91 /* TDGradientPillButton.swift */,
+				12A53CE324B3A27100151B91 /* TDLabel.swift */,
+				12A53CE524B3A27100151B91 /* TDPillButton.swift */,
+				12A53CE624B3A27100151B91 /* TDViewController.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		12A53CEF24B3A27C00151B91 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CF324B3A28600151B91 /* Gradientable.swift */,
+				12A53CF424B3A28600151B91 /* GradientableAnimation.swift */,
+				12A53CF024B3A28600151B91 /* GradientableOptions.swift */,
+				12A53CF124B3A28600151B91 /* GradientView.swift */,
+				12A53CF224B3A28600151B91 /* UIView+Gradientable.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		12A53CFA24B3A29F00151B91 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				12A53CFB24B3A2AA00151B91 /* Borderable.swift */,
+				12A53CFC24B3A2AA00151B91 /* Animatable.swift */,
+				12A53CFD24B3A2AA00151B91 /* Shadowable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5B37220136E6D174223CEE96 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DBA6471C23441D1858B1C84B /* Pods-my-word-archive.debug.xcconfig */,
 				DBF916CCF6D672691A577856 /* Pods-my-word-archive.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +232,7 @@
 				12261FCF24B23E5C0013A22D /* Sources */,
 				12261FD024B23E5C0013A22D /* Frameworks */,
 				12261FD124B23E5C0013A22D /* Resources */,
+				7B80CB950FC173F9D5DD90DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,14 +282,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				12261FE324B23E5E0013A22D /* LaunchScreen.storyboard in Resources */,
+				12A53CD724B3A21800151B91 /* ProximaNovaSoft-Bold.otf in Resources */,
+				12A53CD424B3A21800151B91 /* ProximaNovaSoft-Regular.otf in Resources */,
 				12261FE024B23E5E0013A22D /* Assets.xcassets in Resources */,
+				12A53CD524B3A21800151B91 /* ProximaNovaSoft-Semibold.otf in Resources */,
 				12261FDE24B23E5C0013A22D /* Main.storyboard in Resources */,
+				12A53CD624B3A21800151B91 /* ProximaNovaSoft-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7B80CB950FC173F9D5DD90DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-my-word-archive/Pods-my-word-archive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-my-word-archive/Pods-my-word-archive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-my-word-archive/Pods-my-word-archive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A999FAE26D95E991ED739574 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,9 +340,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A53CF824B3A28700151B91 /* Gradientable.swift in Sources */,
+				12A53CFE24B3A2AA00151B91 /* Borderable.swift in Sources */,
+				12A53CE924B3A27100151B91 /* TDLabel.swift in Sources */,
 				12261FDB24B23E5C0013A22D /* ViewController.swift in Sources */,
+				12A53CF624B3A28700151B91 /* GradientView.swift in Sources */,
+				12A53CCC24B3A1EC00151B91 /* Colors.swift in Sources */,
+				12A53CE024B3A25F00151B91 /* UIApplication+Extensions.swift in Sources */,
+				12A53CF924B3A28700151B91 /* GradientableAnimation.swift in Sources */,
+				12A53CDF24B3A25F00151B91 /* Settings+UserDefaults.swift in Sources */,
+				12A53CFF24B3A2AA00151B91 /* Animatable.swift in Sources */,
+				12A53CE124B3A25F00151B91 /* UIColor+Extensions.swift in Sources */,
+				12A53CEE24B3A27100151B91 /* TDGradientPillButton.swift in Sources */,
 				12261FD724B23E5C0013A22D /* AppDelegate.swift in Sources */,
+				12A53CEC24B3A27100151B91 /* TDViewController.swift in Sources */,
+				12A53CF724B3A28700151B91 /* UIView+Gradientable.swift in Sources */,
+				12A53D0024B3A2AA00151B91 /* Shadowable.swift in Sources */,
 				12261FD924B23E5C0013A22D /* SceneDelegate.swift in Sources */,
+				12A53CF524B3A28700151B91 /* GradientableOptions.swift in Sources */,
+				12A53CED24B3A27100151B91 /* TDButton.swift in Sources */,
+				12A53CEB24B3A27100151B91 /* TDPillButton.swift in Sources */,
+				12A53CEA24B3A27100151B91 /* TDAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
