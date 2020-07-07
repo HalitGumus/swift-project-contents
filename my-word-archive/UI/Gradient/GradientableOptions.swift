@@ -1,6 +1,6 @@
 //
 //  GradientableOptions.swift
-//  TheDatingApp
+//  my-word-archive
 //
 //  Created by HalitGUMUS on 14.09.2019.
 //  Copyright © 2019 HalitGUMUS. All rights reserved.

@@ -1,6 +1,6 @@
 //
-//  TDLabel.swift
-//  TheDatingApp
+//  CALabel.swift
+//  my-word-archive
 //
 //  Created by HalitGUMUS on 22.09.2019.
 //  Copyright © 2019 HalitGUMUS. All rights reserved.
