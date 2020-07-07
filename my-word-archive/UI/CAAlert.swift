@@ -1,6 +1,6 @@
 //
-//  TDAlert.swift
-//  TheDatingApp
+//  CAAlert.swift
+//  my-word-archive
 //
 //  Created by HalitGUMUS on 31.08.2019.
 //  Copyright © 2019 HalitGUMUS. All rights reserved.
@@ -9,7 +9,7 @@
 import SwiftMessages
 
 /// Offers a quick way to show user alerts using SwiftMessages
-final class TDAlert {
+final class CAAlert {
     
     var title: String?
     var body: String?

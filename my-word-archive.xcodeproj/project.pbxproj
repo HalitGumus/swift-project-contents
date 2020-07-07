@@ -21,12 +21,12 @@
 		12A53CDF24B3A25F00151B91 /* Settings+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CDC24B3A25F00151B91 /* Settings+UserDefaults.swift */; };
 		12A53CE024B3A25F00151B91 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CDD24B3A25F00151B91 /* UIApplication+Extensions.swift */; };
 		12A53CE124B3A25F00151B91 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CDE24B3A25F00151B91 /* UIColor+Extensions.swift */; };
-		12A53CE924B3A27100151B91 /* TDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE324B3A27100151B91 /* TDLabel.swift */; };
-		12A53CEA24B3A27100151B91 /* TDAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE424B3A27100151B91 /* TDAlert.swift */; };
-		12A53CEB24B3A27100151B91 /* TDPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE524B3A27100151B91 /* TDPillButton.swift */; };
-		12A53CEC24B3A27100151B91 /* TDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE624B3A27100151B91 /* TDViewController.swift */; };
-		12A53CED24B3A27100151B91 /* TDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE724B3A27100151B91 /* TDButton.swift */; };
-		12A53CEE24B3A27100151B91 /* TDGradientPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE824B3A27100151B91 /* TDGradientPillButton.swift */; };
+		12A53CE924B3A27100151B91 /* CALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE324B3A27100151B91 /* CALabel.swift */; };
+		12A53CEA24B3A27100151B91 /* CAAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE424B3A27100151B91 /* CAAlert.swift */; };
+		12A53CEB24B3A27100151B91 /* CAPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE524B3A27100151B91 /* CAPillButton.swift */; };
+		12A53CEC24B3A27100151B91 /* CAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE624B3A27100151B91 /* CAViewController.swift */; };
+		12A53CED24B3A27100151B91 /* CAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE724B3A27100151B91 /* CAButton.swift */; };
+		12A53CEE24B3A27100151B91 /* CAGradientPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CE824B3A27100151B91 /* CAGradientPillButton.swift */; };
 		12A53CF524B3A28700151B91 /* GradientableOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF024B3A28600151B91 /* GradientableOptions.swift */; };
 		12A53CF624B3A28700151B91 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF124B3A28600151B91 /* GradientView.swift */; };
 		12A53CF724B3A28700151B91 /* UIView+Gradientable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CF224B3A28600151B91 /* UIView+Gradientable.swift */; };
@@ -55,12 +55,12 @@
 		12A53CDC24B3A25F00151B91 /* Settings+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings+UserDefaults.swift"; sourceTree = "<group>"; };
 		12A53CDD24B3A25F00151B91 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		12A53CDE24B3A25F00151B91 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		12A53CE324B3A27100151B91 /* TDLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLabel.swift; sourceTree = "<group>"; };
-		12A53CE424B3A27100151B91 /* TDAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDAlert.swift; sourceTree = "<group>"; };
-		12A53CE524B3A27100151B91 /* TDPillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDPillButton.swift; sourceTree = "<group>"; };
-		12A53CE624B3A27100151B91 /* TDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDViewController.swift; sourceTree = "<group>"; };
-		12A53CE724B3A27100151B91 /* TDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDButton.swift; sourceTree = "<group>"; };
-		12A53CE824B3A27100151B91 /* TDGradientPillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDGradientPillButton.swift; sourceTree = "<group>"; };
+		12A53CE324B3A27100151B91 /* CALabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALabel.swift; sourceTree = "<group>"; };
+		12A53CE424B3A27100151B91 /* CAAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAlert.swift; sourceTree = "<group>"; };
+		12A53CE524B3A27100151B91 /* CAPillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPillButton.swift; sourceTree = "<group>"; };
+		12A53CE624B3A27100151B91 /* CAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAViewController.swift; sourceTree = "<group>"; };
+		12A53CE724B3A27100151B91 /* CAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAButton.swift; sourceTree = "<group>"; };
+		12A53CE824B3A27100151B91 /* CAGradientPillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientPillButton.swift; sourceTree = "<group>"; };
 		12A53CF024B3A28600151B91 /* GradientableOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientableOptions.swift; sourceTree = "<group>"; };
 		12A53CF124B3A28600151B91 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		12A53CF224B3A28600151B91 /* UIView+Gradientable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Gradientable.swift"; sourceTree = "<group>"; };
@@ -172,12 +172,12 @@
 			isa = PBXGroup;
 			children = (
 				12A53CEF24B3A27C00151B91 /* Gradient */,
-				12A53CE424B3A27100151B91 /* TDAlert.swift */,
-				12A53CE724B3A27100151B91 /* TDButton.swift */,
-				12A53CE824B3A27100151B91 /* TDGradientPillButton.swift */,
-				12A53CE324B3A27100151B91 /* TDLabel.swift */,
-				12A53CE524B3A27100151B91 /* TDPillButton.swift */,
-				12A53CE624B3A27100151B91 /* TDViewController.swift */,
+				12A53CE424B3A27100151B91 /* CAAlert.swift */,
+				12A53CE724B3A27100151B91 /* CAButton.swift */,
+				12A53CE824B3A27100151B91 /* CAGradientPillButton.swift */,
+				12A53CE324B3A27100151B91 /* CALabel.swift */,
+				12A53CE524B3A27100151B91 /* CAPillButton.swift */,
+				12A53CE624B3A27100151B91 /* CAViewController.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			files = (
 				12A53CF824B3A28700151B91 /* Gradientable.swift in Sources */,
 				12A53CFE24B3A2AA00151B91 /* Borderable.swift in Sources */,
-				12A53CE924B3A27100151B91 /* TDLabel.swift in Sources */,
+				12A53CE924B3A27100151B91 /* CALabel.swift in Sources */,
 				12261FDB24B23E5C0013A22D /* ViewController.swift in Sources */,
 				12A53CF624B3A28700151B91 /* GradientView.swift in Sources */,
 				12A53CCC24B3A1EC00151B91 /* Colors.swift in Sources */,
@@ -351,16 +351,16 @@
 				12A53CDF24B3A25F00151B91 /* Settings+UserDefaults.swift in Sources */,
 				12A53CFF24B3A2AA00151B91 /* Animatable.swift in Sources */,
 				12A53CE124B3A25F00151B91 /* UIColor+Extensions.swift in Sources */,
-				12A53CEE24B3A27100151B91 /* TDGradientPillButton.swift in Sources */,
+				12A53CEE24B3A27100151B91 /* CAGradientPillButton.swift in Sources */,
 				12261FD724B23E5C0013A22D /* AppDelegate.swift in Sources */,
-				12A53CEC24B3A27100151B91 /* TDViewController.swift in Sources */,
+				12A53CEC24B3A27100151B91 /* CAViewController.swift in Sources */,
 				12A53CF724B3A28700151B91 /* UIView+Gradientable.swift in Sources */,
 				12A53D0024B3A2AA00151B91 /* Shadowable.swift in Sources */,
 				12261FD924B23E5C0013A22D /* SceneDelegate.swift in Sources */,
 				12A53CF524B3A28700151B91 /* GradientableOptions.swift in Sources */,
-				12A53CED24B3A27100151B91 /* TDButton.swift in Sources */,
-				12A53CEB24B3A27100151B91 /* TDPillButton.swift in Sources */,
-				12A53CEA24B3A27100151B91 /* TDAlert.swift in Sources */,
+				12A53CED24B3A27100151B91 /* CAButton.swift in Sources */,
+				12A53CEB24B3A27100151B91 /* CAPillButton.swift in Sources */,
+				12A53CEA24B3A27100151B91 /* CAAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
