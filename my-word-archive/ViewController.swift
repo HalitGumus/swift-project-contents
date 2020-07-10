@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = Colors.defaultBackground
-        headerView.backgroundColor = Colors.defaultHeaderBackground
+        view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
     }
 
 }
