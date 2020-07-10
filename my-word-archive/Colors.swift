@@ -20,8 +20,8 @@ struct Colors {
     static let defaultHeaderBackground = Color(hex: "27314B")!
     static let defaultButton = Color(hex: "D8D8D8")!
     static let gradientPillButtonTitle = Color(hex: "FFFFFF")!
-    static let gradientStart = Color(hex: "EC6469")!
-    static let gradientEnd = Color(hex: "E84976")!
+    static let gradientStart = Color(hex: "FE9401")!
+    static let gradientEnd = Color(hex: "FF5f37")!
     static let appPurpleColor = Color(hex: "FE5068")!
     static let appGrayColor = Color(hex: "474747")!
     
