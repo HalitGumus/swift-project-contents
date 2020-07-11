@@ -10,5 +10,7 @@ target 'my-word-archive' do
   pod 'NVActivityIndicatorView'
   pod 'Koloda'
   pod 'SwiftLint'
-   
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  
 end
