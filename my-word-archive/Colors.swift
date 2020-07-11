@@ -16,7 +16,7 @@ struct Colors {
         static let options = GradientableOptions(colors: [start, end], direction: GradientableOptions.Direction.bottom)
     }
     
-    static let defaultBackground = Color(hex: "171A35")!
+    static let defaultBackground = Color(hex: "F5F6F9")! //171A35
     static let defaultHeaderBackground = Color(hex: "27314B")!
     static let defaultButton = Color(hex: "D8D8D8")!
     static let gradientPillButtonTitle = Color(hex: "FFFFFF")!

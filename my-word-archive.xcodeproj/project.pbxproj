@@ -14,6 +14,9 @@
 		12261FE024B23E5E0013A22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12261FDF24B23E5E0013A22D /* Assets.xcassets */; };
 		12261FE324B23E5E0013A22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12261FE124B23E5E0013A22D /* LaunchScreen.storyboard */; };
 		1227968524B9A09000BF2B69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1227968424B9A09000BF2B69 /* GoogleService-Info.plist */; };
+		1227968724B9AF3B00BF2B69 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */; };
+		1227968A24B9AF4D00BF2B69 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */; };
+		1227968B24B9AF4D00BF2B69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227968924B9AF4D00BF2B69 /* LoginViewController.swift */; };
 		12A53CCC24B3A1EC00151B91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CCB24B3A1EC00151B91 /* Colors.swift */; };
 		12A53CD424B3A21800151B91 /* ProximaNovaSoft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD024B3A21800151B91 /* ProximaNovaSoft-Regular.otf */; };
 		12A53CD524B3A21800151B91 /* ProximaNovaSoft-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD124B3A21800151B91 /* ProximaNovaSoft-Semibold.otf */; };
@@ -49,6 +52,9 @@
 		12261FE224B23E5E0013A22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12261FE424B23E5E0013A22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1227968424B9A09000BF2B69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1227968924B9AF4D00BF2B69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		12A53CCB24B3A1EC00151B91 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		12A53CD024B3A21800151B91 /* ProximaNovaSoft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Regular.otf"; sourceTree = "<group>"; };
 		12A53CD124B3A21800151B91 /* ProximaNovaSoft-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Semibold.otf"; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 				12261FD624B23E5C0013A22D /* AppDelegate.swift */,
 				12261FD824B23E5C0013A22D /* SceneDelegate.swift */,
 				12261FDA24B23E5C0013A22D /* ViewController.swift */,
+				1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */,
+				1227968924B9AF4D00BF2B69 /* LoginViewController.swift */,
+				1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */,
 				12261FDC24B23E5C0013A22D /* Main.storyboard */,
 				12261FDF24B23E5E0013A22D /* Assets.xcassets */,
 				12261FE124B23E5E0013A22D /* LaunchScreen.storyboard */,
@@ -356,13 +365,16 @@
 				12A53CFF24B3A2AA00151B91 /* Animatable.swift in Sources */,
 				12A53CE124B3A25F00151B91 /* UIColor+Extensions.swift in Sources */,
 				12A53CEE24B3A27100151B91 /* CAGradientPillButton.swift in Sources */,
+				1227968B24B9AF4D00BF2B69 /* LoginViewController.swift in Sources */,
 				12261FD724B23E5C0013A22D /* AppDelegate.swift in Sources */,
 				12A53CEC24B3A27100151B91 /* CAViewController.swift in Sources */,
+				1227968A24B9AF4D00BF2B69 /* RegisterViewController.swift in Sources */,
 				12A53CF724B3A28700151B91 /* UIView+Gradientable.swift in Sources */,
 				12A53D0024B3A2AA00151B91 /* Shadowable.swift in Sources */,
 				12261FD924B23E5C0013A22D /* SceneDelegate.swift in Sources */,
 				12A53CF524B3A28700151B91 /* GradientableOptions.swift in Sources */,
 				12A53CED24B3A27100151B91 /* CAButton.swift in Sources */,
+				1227968724B9AF3B00BF2B69 /* DashboardViewController.swift in Sources */,
 				12A53CEB24B3A27100151B91 /* CAPillButton.swift in Sources */,
 				12A53CEA24B3A27100151B91 /* CAAlert.swift in Sources */,
 			);

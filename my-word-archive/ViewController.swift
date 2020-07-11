@@ -13,40 +13,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var headerView: UIView!
     
+    var handle: AuthStateDidChangeListenerHandle?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
-        
-        
-        signInWithFirebase()
-        
+
     }
-    
-    func signUpWithFirebase(){
-        Auth.auth().createUser(withEmail: "halitgumus47@gmail.com", password: "p12346") { authResult, error in
-            
-            if let error = error {
-                print(error)
-                return
-            }
-            
-            print("Başarılı bir şekilde kayıt yaptınız")
+
+    @IBAction func logoutButton(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            CAAlert(successMessage: "Bye 👋👋👋").show()
+            let viewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+            self.navigationController?.setViewControllers([viewController], animated: true)
+        } catch let signoutError as NSError {
+            CAAlert(errorMessage: signoutError.localizedDescription).show()
         }
     }
-    
-    func signInWithFirebase(){
-        Auth.auth().signIn(withEmail: "halitgumus47@gmail.com", password: "p12346") { [weak self] authResult, error in
-            guard self != nil else { return }
-            
-            if let error = error {
-                print(error)
-                return
-            }
-            
-            print("Başarılı bir şekilde giriş yaptınız")
-        }
-    }
-    
 }
 
