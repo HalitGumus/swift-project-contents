@@ -69,6 +69,7 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - Koloda (5.0.1):
     - pop (~> 1.0)
+  - MaterialTextField (1.0.1)
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
     - nanopb/encode (= 1.30905.0)
@@ -88,6 +89,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Koloda
+  - MaterialTextField (~> 1.0)
   - NVActivityIndicatorView
   - SwiftLint
   - SwiftMessages
@@ -106,6 +108,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - Koloda
+    - MaterialTextField
     - nanopb
     - NVActivityIndicatorView
     - pop
@@ -126,6 +129,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
@@ -133,6 +137,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
 
-PODFILE CHECKSUM: 4dcbcc1f15901ce8c2cbb896abcddd7f5d4fa28c
+PODFILE CHECKSUM: fed3d031f64dd288fd8f30a1e414cad378bf0174
 
 COCOAPODS: 1.9.3

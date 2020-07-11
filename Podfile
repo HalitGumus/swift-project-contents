@@ -12,5 +12,6 @@ target 'my-word-archive' do
   pod 'SwiftLint'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'MaterialTextField', '~> 1.0'
   
 end

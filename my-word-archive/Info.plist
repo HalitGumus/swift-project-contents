@@ -60,5 +60,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ProximaNovaSoft-Bold.otf</string>
+		<string>ProximaNovaSoft-Medium.otf</string>
+		<string>ProximaNovaSoft-Regular.otf</string>
+		<string>ProximaNovaSoft-Semibold.otf</string>
+	</array>
 </dict>
 </plist>
