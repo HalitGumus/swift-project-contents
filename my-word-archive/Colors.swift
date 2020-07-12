@@ -25,6 +25,8 @@ struct Colors {
     static let appPurpleColor = Color(hex: "FE5068")!
     static let appGrayColor = Color(hex: "474747")!
     
+    static let bluebutton = Color(hex: "19AECF")!
+    static let greenButton = Color(hex: "73C94B")!
     static let loadingableTint = Color(hex: "2E5BB9")!
     static let carnation = Color(hex: "FF7593")!
     static let blueGrey = Color(hex: "7e889b")!

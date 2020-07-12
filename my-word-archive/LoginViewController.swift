@@ -51,9 +51,11 @@ class LoginViewController: CAViewController, UITextFieldDelegate {
     }
     
     func loginSuccess(){
-        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        self.navigationController?.setViewControllers([viewController], animated: true)
-        CAAlert(successMessage: "Welcome 👋👋👋").show()
+        if let user = Auth.auth().currentUser {
+                       let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                       self.navigationController?.setViewControllers([viewController], animated: true)
+            CAAlert(successMessage: user.displayName! + " Welcome 👋👋👋").show()
+        }
     }
     
 }

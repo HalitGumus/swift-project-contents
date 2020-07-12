@@ -9,6 +9,9 @@ PODS:
     - FirebaseAnalytics (= 6.6.2)
   - Firebase/CoreOnly (6.27.1):
     - FirebaseCore (= 6.8.1)
+  - Firebase/Database (6.27.1):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.3.0)
   - FirebaseAnalytics (6.6.2):
     - FirebaseCore (~> 6.8)
     - FirebaseInstallations (~> 1.4)
@@ -32,6 +35,9 @@ PODS:
     - GoogleUtilities/Environment (~> 6.5)
     - GoogleUtilities/Logger (~> 6.5)
     - nanopb (~> 1.30905.0)
+  - FirebaseDatabase (6.3.0):
+    - FirebaseCore (~> 6.8)
+    - leveldb-library (~> 1.22)
   - FirebaseInstallations (1.4.0):
     - FirebaseCore (~> 6.8)
     - GoogleUtilities/Environment (~> 6.6)
@@ -69,6 +75,7 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - Koloda (5.0.1):
     - pop (~> 1.0)
+  - leveldb-library (1.22)
   - MaterialTextField (1.0.1)
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
@@ -88,6 +95,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
+  - Firebase/Database
   - Koloda
   - MaterialTextField (~> 1.0)
   - NVActivityIndicatorView
@@ -101,6 +109,7 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
+    - FirebaseDatabase
     - FirebaseInstallations
     - GoogleAppMeasurement
     - GoogleDataTransport
@@ -108,6 +117,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - Koloda
+    - leveldb-library
     - MaterialTextField
     - nanopb
     - NVActivityIndicatorView
@@ -122,6 +132,7 @@ SPEC CHECKSUMS:
   FirebaseAuth: b85c064e0ac60f82486728d50a4803f235687302
   FirebaseCore: 8cd4f8ea22075e0ee582849b1cf79d8816506085
   FirebaseCoreDiagnostics: 4505e4d4009b1d93f605088ee7d7764d5f0d1c84
+  FirebaseDatabase: 3d02ffa794ec174853c086cf87cf2dc79bd6da49
   FirebaseInstallations: 293f567159b6d66d1c990f13bb868066096c94ec
   GoogleAppMeasurement: 8cd1f289d60e629cf16ab03363b9e89c776b9651
   GoogleDataTransport: 9a8a16f79feffc7f42096743de2a7c4815e84020
@@ -129,6 +140,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
@@ -137,6 +149,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
 
-PODFILE CHECKSUM: fed3d031f64dd288fd8f30a1e414cad378bf0174
+PODFILE CHECKSUM: c081209ac6a7e54a6d80ee83481092e9c2dae32f
 
 COCOAPODS: 1.9.3

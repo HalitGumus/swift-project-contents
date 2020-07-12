@@ -13,5 +13,6 @@ target 'my-word-archive' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'MaterialTextField', '~> 1.0'
+  pod 'Firebase/Database'
   
 end
