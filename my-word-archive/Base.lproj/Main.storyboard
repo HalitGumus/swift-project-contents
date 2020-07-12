@@ -143,6 +143,42 @@
                                     <action selector="logoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKe-x0-etV"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOh-4Y-sZH">
+                                <rect key="frame" x="20" y="388" width="374" height="120"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Benim sözlüğüm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxL-jQ-RAQ">
+                                        <rect key="frame" x="20" y="20" width="334" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTS-SB-u2n">
+                                        <rect key="frame" x="20" y="60" width="157" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Semibold" family="Proxima Nova Soft" pointSize="18"/>
+                                        <state key="normal" title="Tekrar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="learnViewLeftButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SaH-n5-86m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfr-bM-fiw">
+                                        <rect key="frame" x="197" y="60" width="157" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Semibold" family="Proxima Nova Soft" pointSize="18"/>
+                                        <state key="normal" title="Öğren">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="learnViewRigtButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="elb-pp-pqV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
@@ -154,11 +190,15 @@
                     </view>
                     <connections>
                         <outlet property="headerView" destination="z7O-3n-Iga" id="83f-bV-Hnn"/>
+                        <outlet property="learnView" destination="jOh-4Y-sZH" id="yku-GD-o9Q"/>
+                        <outlet property="learnViewLeftButton" destination="UTS-SB-u2n" id="ze8-cp-GtE"/>
+                        <outlet property="learnViewRightButton" destination="gfr-bM-fiw" id="9fM-SY-BYg"/>
+                        <outlet property="learnViewTitle" destination="QxL-jQ-RAQ" id="2lj-7z-UDx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3704" y="894"/>
+            <point key="canvasLocation" x="-3704.347826086957" y="893.97321428571422"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="OMd-Tj-Zri">
@@ -294,7 +334,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Word Archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UTp-ua-7Wm">
-                                <rect key="frame" x="85" y="26" width="243" height="78"/>
+                                <rect key="frame" x="85" y="44" width="243" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ProximaNovaSoft-Semibold" family="Proxima Nova Soft" pointSize="24"/>
                                 <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -312,10 +352,18 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YJd-wg-ceG">
-                                <rect key="frame" x="20" y="328" width="374" height="240"/>
+                                <rect key="frame" x="20" y="288" width="374" height="320"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bx7-6d-IH2" customClass="MFTextField">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3n-8E-Lyy" customClass="MFTextField">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="4et-FT-iao"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Medium" family="Proxima Nova Soft" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bx7-6d-IH2" customClass="MFTextField">
+                                        <rect key="frame" x="0.0" y="80" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Qlr-vZ-6oO"/>
                                         </constraints>
@@ -323,7 +371,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="keH-ea-Q26" customClass="MFTextField">
-                                        <rect key="frame" x="0.0" y="80" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="160" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="YFS-Gp-S84"/>
                                         </constraints>
@@ -331,7 +379,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Repead Password" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucJ-cK-k6r" customClass="MFTextField">
-                                        <rect key="frame" x="0.0" y="160" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="240" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Woj-yL-XWf"/>
                                         </constraints>
@@ -356,6 +404,7 @@
                         <outlet property="passwordTextField" destination="keH-ea-Q26" id="dL7-qr-TJl"/>
                         <outlet property="repeadPassword" destination="ucJ-cK-k6r" id="ZsU-PD-rre"/>
                         <outlet property="titleLabel" destination="UTp-ua-7Wm" id="cA4-Tb-VDg"/>
+                        <outlet property="userNameTextField" destination="k3n-8E-Lyy" id="yJR-Sh-eZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGl-dl-7Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>

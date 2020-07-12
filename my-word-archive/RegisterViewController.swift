@@ -13,6 +13,7 @@ import Firebase
 class RegisterViewController: CAViewController, UITextFieldDelegate {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var userNameTextField: MFTextField!
     @IBOutlet weak var emailTextField: MFTextField!
     @IBOutlet weak var passwordTextField: MFTextField!
     @IBOutlet weak var repeadPassword: MFTextField!
@@ -20,6 +21,11 @@ class RegisterViewController: CAViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userNameTextField.animatesPlaceholder = true
+        userNameTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
+        userNameTextField.textColor = UIColor.mf_veryDarkGray()
+        userNameTextField.delegate = self
         
         emailTextField.animatesPlaceholder = true
         emailTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
@@ -39,16 +45,25 @@ class RegisterViewController: CAViewController, UITextFieldDelegate {
     }
 
     @IBAction func registerButton(_ sender: Any) {
-        signUpWithFirebase(email: emailTextField.text!, password: passwordTextField.text!)
+        signUpWithFirebase(userName:userNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!)
     }
     
-    func signUpWithFirebase(email:String, password:String){
+    func signUpWithFirebase(userName:String, email:String, password:String){
            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                
                if let error = error {
                 CAAlert(errorMessage: error.localizedDescription).show()
                    return
                }
+            
+            let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+            changeRequest?.displayName = userName
+            changeRequest?.commitChanges { error in
+                if error == nil {
+                    print("User display name changed!")
+                }
+            }
+            
                
                CAAlert(successMessage: "Kayıt başarılı").show()
                

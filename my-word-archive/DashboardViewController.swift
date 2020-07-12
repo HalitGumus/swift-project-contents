@@ -44,9 +44,9 @@ class DashboardViewController: CAViewController {
         
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
           
-            if Auth.auth().currentUser != nil {
+            if let user = Auth.auth().currentUser {
                 print("giriş yapıldı")
-                CAAlert(successMessage: "Welcome 👋👋👋").show()
+                CAAlert(successMessage: user.displayName! + " Welcome 👋👋👋").show()
                 let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
                 self.navigationController?.setViewControllers([viewController], animated: true)
             }else{
