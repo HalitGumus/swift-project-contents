@@ -67,7 +67,7 @@ class RegisterViewController: CAViewController, UITextFieldDelegate {
                
                CAAlert(successMessage: "Kayıt başarılı").show()
                
-              let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+              let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! MainViewController
                self.navigationController?.setViewControllers([viewController], animated: true)
            }
        }
