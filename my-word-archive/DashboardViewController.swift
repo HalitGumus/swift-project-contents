@@ -47,7 +47,7 @@ class DashboardViewController: CAViewController {
             if let user = Auth.auth().currentUser {
                 print("giriş yapıldı")
                 CAAlert(successMessage: user.displayName! + " Welcome 👋👋👋").show()
-                let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! MainViewController
                 self.navigationController?.setViewControllers([viewController], animated: true)
             }else{
                 print("kullanıcı bulunamadı")

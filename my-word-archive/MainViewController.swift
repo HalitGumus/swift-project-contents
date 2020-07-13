@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var learnView: UIView!
@@ -55,10 +55,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func learnViewRigtButtonClick(_ sender: Any) {
-        if let user = Auth.auth().currentUser {
-            self.ref.child("users").child(user.uid).setValue(["username": user.displayName!])
-            CAAlert(successMessage: user.displayName! + " eklendi!!").show()
-        }
+//        if let user = Auth.auth().currentUser {
+//            self.ref.child("users").child(user.uid).setValue(["username": user.displayName!])
+//            CAAlert(successMessage: user.displayName! + " eklendi!!").show()
+//        }
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LearnViewController") as? LearnViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     @IBAction func learnViewLeftButtonClick(_ sender: Any) {
@@ -73,5 +76,6 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+
 }
 

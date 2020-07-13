@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		12261FD724B23E5C0013A22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FD624B23E5C0013A22D /* AppDelegate.swift */; };
 		12261FD924B23E5C0013A22D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FD824B23E5C0013A22D /* SceneDelegate.swift */; };
-		12261FDB24B23E5C0013A22D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FDA24B23E5C0013A22D /* ViewController.swift */; };
+		12261FDB24B23E5C0013A22D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FDA24B23E5C0013A22D /* MainViewController.swift */; };
 		12261FDE24B23E5C0013A22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12261FDC24B23E5C0013A22D /* Main.storyboard */; };
 		12261FE024B23E5E0013A22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12261FDF24B23E5E0013A22D /* Assets.xcassets */; };
 		12261FE324B23E5E0013A22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12261FE124B23E5E0013A22D /* LaunchScreen.storyboard */; };
@@ -17,6 +17,7 @@
 		1227968724B9AF3B00BF2B69 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */; };
 		1227968A24B9AF4D00BF2B69 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */; };
 		1227968B24B9AF4D00BF2B69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227968924B9AF4D00BF2B69 /* LoginViewController.swift */; };
+		122AB81F24BCEDE8008C8FC0 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122AB81E24BCEDE8008C8FC0 /* LearnViewController.swift */; };
 		12A53CCC24B3A1EC00151B91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53CCB24B3A1EC00151B91 /* Colors.swift */; };
 		12A53CD424B3A21800151B91 /* ProximaNovaSoft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD024B3A21800151B91 /* ProximaNovaSoft-Regular.otf */; };
 		12A53CD524B3A21800151B91 /* ProximaNovaSoft-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12A53CD124B3A21800151B91 /* ProximaNovaSoft-Semibold.otf */; };
@@ -46,7 +47,7 @@
 		12261FD324B23E5C0013A22D /* my-word-archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-word-archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12261FD624B23E5C0013A22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12261FD824B23E5C0013A22D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12261FDA24B23E5C0013A22D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12261FDA24B23E5C0013A22D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		12261FDD24B23E5C0013A22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12261FDF24B23E5E0013A22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12261FE224B23E5E0013A22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1227968924B9AF4D00BF2B69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		122AB81E24BCEDE8008C8FC0 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		12A53CCB24B3A1EC00151B91 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		12A53CD024B3A21800151B91 /* ProximaNovaSoft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Regular.otf"; sourceTree = "<group>"; };
 		12A53CD124B3A21800151B91 /* ProximaNovaSoft-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Semibold.otf"; sourceTree = "<group>"; };
@@ -119,7 +121,8 @@
 				12A53CCA24B3A1DE00151B91 /* Assets */,
 				12261FD624B23E5C0013A22D /* AppDelegate.swift */,
 				12261FD824B23E5C0013A22D /* SceneDelegate.swift */,
-				12261FDA24B23E5C0013A22D /* ViewController.swift */,
+				12261FDA24B23E5C0013A22D /* MainViewController.swift */,
+				122AB81E24BCEDE8008C8FC0 /* LearnViewController.swift */,
 				1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */,
 				1227968924B9AF4D00BF2B69 /* LoginViewController.swift */,
 				1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */,
@@ -353,10 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122AB81F24BCEDE8008C8FC0 /* LearnViewController.swift in Sources */,
 				12A53CF824B3A28700151B91 /* Gradientable.swift in Sources */,
 				12A53CFE24B3A2AA00151B91 /* Borderable.swift in Sources */,
 				12A53CE924B3A27100151B91 /* CALabel.swift in Sources */,
-				12261FDB24B23E5C0013A22D /* ViewController.swift in Sources */,
+				12261FDB24B23E5C0013A22D /* MainViewController.swift in Sources */,
 				12A53CF624B3A28700151B91 /* GradientView.swift in Sources */,
 				12A53CCC24B3A1EC00151B91 /* Colors.swift in Sources */,
 				12A53CE024B3A25F00151B91 /* UIApplication+Extensions.swift in Sources */,
