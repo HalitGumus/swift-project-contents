@@ -45,11 +45,17 @@ class DashboardViewController: CAViewController {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
           
             if let user = Auth.auth().currentUser {
+                
+                UserService.observeUserProfile(user.uid) { userProfile in
+                    UserService.currentUserProfile = userProfile
+                }
+                
                 print("giriş yapıldı")
                 CAAlert(successMessage: user.displayName! + " Welcome 👋👋👋").show()
                 let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! MainViewController
                 self.navigationController?.setViewControllers([viewController], animated: true)
             }else{
+                 UserService.currentUserProfile = nil
                 print("kullanıcı bulunamadı")
             }
         }

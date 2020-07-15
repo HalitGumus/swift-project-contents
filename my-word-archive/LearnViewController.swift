@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import NVActivityIndicatorView
 
-class LearnViewController: UIViewController {
+class LearnViewController: UIViewController, NVActivityIndicatorViewable {
     
     @IBOutlet weak var learnView: UIView!
     @IBOutlet weak var learnKey: UILabel!
@@ -16,10 +18,9 @@ class LearnViewController: UIViewController {
     @IBOutlet weak var flipView: UIView!
     @IBOutlet weak var flipButton: UIButton!
     
-    var learnCards = [
-        LearnCard(id: "1", author: "Halit", key: "Some", value: "Biraz", description: "have some fun"),
-        LearnCard(id: "2", author: "Halit", key: "Time", value: "Zaman", description: "time out")
-    ]
+    var learnCards = [LearnCard]()
+    var cardType = true
+    var cardNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,57 @@ class LearnViewController: UIViewController {
         
         learnValue.textColor = UIColor.white
         
-        learnKey.text = learnCards.first?.key
-        learnValue.text = learnCards.first?.value
+        observeCards()
+    }
+    
+    func observeCards(){
+        self.startAnimating()
+        
+        let cardsRef = Database.database().reference().child("words")
+        
+        cardsRef.observe(.value, with: { snapshot in
+            
+            var tempCards = [LearnCard]()
+            
+            for child in snapshot.children {
+                if let childSnapshot = child as? DataSnapshot,
+                    let dict = childSnapshot.value as? [String:Any],
+                    let author = dict["author"] as? [String: Any],
+                    let uid = author["uid"] as? String,
+                    let userName = author["userName"] as? String,
+                    let photoUrl = author["photoURL"] as? String,
+                    let url = URL(string: photoUrl),
+                    let key = dict["key"] as? String,
+                    let value = dict["value"] as? String,
+                    let desc = dict["desc"] as? String {
+                    
+                    let userProfile = UserProfile(uid: uid, userName: userName, photoUrl: url)
+                    let card = LearnCard(id: childSnapshot.key, author: userProfile, key: key, value: value, description: desc)
+                    tempCards.append(card)
+                }
+            }
+            self.stopAnimating()
+            self.learnCards = tempCards
+            self.updateCard()
+        })
+    }
+    
+    @IBAction func flipButton(_ sender: Any) {
+        cardType = !cardType
+        updateCard()
+    }
+    
+    @IBAction func nextButton(_ sender: Any) {
+        if cardNumber < learnCards.count - 1 {
+            cardNumber = cardNumber + 1
+            updateCard()
+        }
+    }
+    
+    func updateCard(){
+        self.learnKey.text = self.learnCards[cardNumber].key
+        self.learnValue.text = cardType ? self.learnCards[cardNumber].value : self.learnCards[cardNumber].description
+        
     }
     
 }

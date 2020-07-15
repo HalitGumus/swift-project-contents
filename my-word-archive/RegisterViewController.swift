@@ -152,8 +152,8 @@ class RegisterViewController: CAViewController, UITextFieldDelegate, NVActivityI
         let databaseRef = Database.database().reference().child("users/profile/\(uid)")
         
         let userObject = [
-            "username": userName,
-            "photoUrl": profileImageUrl.absoluteString
+            "userName": userName,
+            "photoURL": profileImageUrl.absoluteString
         ] as [String: Any]
         
         databaseRef.setValue(userObject) { (error, ref) in

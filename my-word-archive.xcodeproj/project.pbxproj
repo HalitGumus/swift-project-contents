@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1217B1BE24BF180700BD9DFF /* LearnCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217B1BD24BF180700BD9DFF /* LearnCard.swift */; };
+		1217B1C124BF1EA700BD9DFF /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217B1C024BF1EA700BD9DFF /* NewWordViewController.swift */; };
+		1217B1C324BF714900BD9DFF /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217B1C224BF714900BD9DFF /* UserProfile.swift */; };
+		1217B1C524BF71CC00BD9DFF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217B1C424BF71CC00BD9DFF /* UserService.swift */; };
 		12261FD724B23E5C0013A22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FD624B23E5C0013A22D /* AppDelegate.swift */; };
 		12261FD924B23E5C0013A22D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FD824B23E5C0013A22D /* SceneDelegate.swift */; };
 		12261FDB24B23E5C0013A22D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FDA24B23E5C0013A22D /* MainViewController.swift */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		1217B1BD24BF180700BD9DFF /* LearnCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCard.swift; sourceTree = "<group>"; };
+		1217B1C024BF1EA700BD9DFF /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
+		1217B1C224BF714900BD9DFF /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		1217B1C424BF71CC00BD9DFF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		12261FD324B23E5C0013A22D /* my-word-archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-word-archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12261FD624B23E5C0013A22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12261FD824B23E5C0013A22D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,8 +108,27 @@
 			isa = PBXGroup;
 			children = (
 				1217B1BD24BF180700BD9DFF /* LearnCard.swift */,
+				1217B1C224BF714900BD9DFF /* UserProfile.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		1217B1BF24BF1E8A00BD9DFF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */,
+				1227968924B9AF4D00BF2B69 /* LoginViewController.swift */,
+				1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1217B1C624BF71D000BD9DFF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1217B1C424BF71CC00BD9DFF /* UserService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		12261FCA24B23E5C0013A22D = {
@@ -130,13 +155,13 @@
 				12A53CDA24B3A24300151B91 /* UI */,
 				12A53CCA24B3A1DE00151B91 /* Assets */,
 				1217B1BC24BF17E400BD9DFF /* Models */,
+				1217B1C624BF71D000BD9DFF /* Services */,
 				12261FD624B23E5C0013A22D /* AppDelegate.swift */,
 				12261FD824B23E5C0013A22D /* SceneDelegate.swift */,
+				1217B1BF24BF1E8A00BD9DFF /* Login */,
 				12261FDA24B23E5C0013A22D /* MainViewController.swift */,
 				122AB81E24BCEDE8008C8FC0 /* LearnViewController.swift */,
-				1227968624B9AF3B00BF2B69 /* DashboardViewController.swift */,
-				1227968924B9AF4D00BF2B69 /* LoginViewController.swift */,
-				1227968824B9AF4C00BF2B69 /* RegisterViewController.swift */,
+				1217B1C024BF1EA700BD9DFF /* NewWordViewController.swift */,
 				12261FDC24B23E5C0013A22D /* Main.storyboard */,
 				12261FDF24B23E5E0013A22D /* Assets.xcassets */,
 				12261FE124B23E5E0013A22D /* LaunchScreen.storyboard */,
@@ -383,7 +408,10 @@
 				12A53CEE24B3A27100151B91 /* CAGradientPillButton.swift in Sources */,
 				1227968B24B9AF4D00BF2B69 /* LoginViewController.swift in Sources */,
 				12261FD724B23E5C0013A22D /* AppDelegate.swift in Sources */,
+				1217B1C524BF71CC00BD9DFF /* UserService.swift in Sources */,
+				1217B1C324BF714900BD9DFF /* UserProfile.swift in Sources */,
 				12A53CEC24B3A27100151B91 /* CAViewController.swift in Sources */,
+				1217B1C124BF1EA700BD9DFF /* NewWordViewController.swift in Sources */,
 				1227968A24B9AF4D00BF2B69 /* RegisterViewController.swift in Sources */,
 				12A53CF724B3A28700151B91 /* UIView+Gradientable.swift in Sources */,
 				12A53D0024B3A2AA00151B91 /* Shadowable.swift in Sources */,
