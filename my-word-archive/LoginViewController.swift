@@ -21,6 +21,8 @@ class LoginViewController: CAViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
+        
         emailTextField.animatesPlaceholder = true
         emailTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
         emailTextField.textColor = UIColor.mf_veryDarkGray()

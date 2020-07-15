@@ -7,12 +7,13 @@ target 'my-word-archive' do
 
   # Pods for my-word-archive
   pod 'SwiftMessages'
-  pod 'NVActivityIndicatorView'
+  pod 'NVActivityIndicatorView/Extended'
   pod 'Koloda'
   pod 'SwiftLint'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'MaterialTextField', '~> 1.0'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1217B1BE24BF180700BD9DFF /* LearnCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217B1BD24BF180700BD9DFF /* LearnCard.swift */; };
 		12261FD724B23E5C0013A22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FD624B23E5C0013A22D /* AppDelegate.swift */; };
 		12261FD924B23E5C0013A22D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FD824B23E5C0013A22D /* SceneDelegate.swift */; };
 		12261FDB24B23E5C0013A22D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12261FDA24B23E5C0013A22D /* MainViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1217B1BD24BF180700BD9DFF /* LearnCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCard.swift; sourceTree = "<group>"; };
 		12261FD324B23E5C0013A22D /* my-word-archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-word-archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12261FD624B23E5C0013A22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12261FD824B23E5C0013A22D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1217B1BC24BF17E400BD9DFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1217B1BD24BF180700BD9DFF /* LearnCard.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		12261FCA24B23E5C0013A22D = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 			children = (
 				12A53CDA24B3A24300151B91 /* UI */,
 				12A53CCA24B3A1DE00151B91 /* Assets */,
+				1217B1BC24BF17E400BD9DFF /* Models */,
 				12261FD624B23E5C0013A22D /* AppDelegate.swift */,
 				12261FD824B23E5C0013A22D /* SceneDelegate.swift */,
 				12261FDA24B23E5C0013A22D /* MainViewController.swift */,
@@ -360,6 +371,7 @@
 				12A53CF824B3A28700151B91 /* Gradientable.swift in Sources */,
 				12A53CFE24B3A2AA00151B91 /* Borderable.swift in Sources */,
 				12A53CE924B3A27100151B91 /* CALabel.swift in Sources */,
+				1217B1BE24BF180700BD9DFF /* LearnCard.swift in Sources */,
 				12261FDB24B23E5C0013A22D /* MainViewController.swift in Sources */,
 				12A53CF624B3A28700151B91 /* GradientView.swift in Sources */,
 				12A53CCC24B3A1EC00151B91 /* Colors.swift in Sources */,

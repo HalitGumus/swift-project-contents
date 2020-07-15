@@ -453,6 +453,25 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAF-Rl-5Oj">
+                                <rect key="frame" x="147" y="129" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="NJG-VP-fPS">
+                                        <rect key="frame" x="15" y="0.0" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVi-lP-EA0">
+                                        <rect key="frame" x="0.0" y="95" width="120" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="16"/>
+                                        <state key="normal" title="Tap to change">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -467,6 +486,8 @@
                         <outlet property="emailTextField" destination="Bx7-6d-IH2" id="wSP-Cc-0t1"/>
                         <outlet property="loginButton" destination="AVh-cW-7l0" id="aHc-wl-BNb"/>
                         <outlet property="passwordTextField" destination="keH-ea-Q26" id="dL7-qr-TJl"/>
+                        <outlet property="profileImageButton" destination="LVi-lP-EA0" id="dYx-yj-hxf"/>
+                        <outlet property="profileImageView" destination="NJG-VP-fPS" id="8cp-DY-oPu"/>
                         <outlet property="repeadPassword" destination="ucJ-cK-k6r" id="ZsU-PD-rre"/>
                         <outlet property="titleLabel" destination="UTp-ua-7Wm" id="cA4-Tb-VDg"/>
                         <outlet property="userNameTextField" destination="k3n-8E-Lyy" id="yJR-Sh-eZo"/>
@@ -474,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGl-dl-7Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2386" y="160"/>
+            <point key="canvasLocation" x="-2386.9565217391305" y="159.375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="We2-x0-tTx">
@@ -501,5 +522,6 @@
         <image name="flip" width="64" height="64"/>
         <image name="home_Selected" width="64" height="64"/>
         <image name="menu_Selected" width="64" height="64"/>
+        <image name="profileImage" width="64" height="64"/>
     </resources>
 </document>
