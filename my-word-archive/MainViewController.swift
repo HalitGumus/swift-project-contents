@@ -13,10 +13,17 @@ import FirebaseDatabase
 class MainViewController: UIViewController {
     
     @IBOutlet weak var headerView: UIView!
+    
     @IBOutlet weak var learnView: UIView!
     @IBOutlet weak var learnViewTitle: UILabel!
     @IBOutlet weak var learnViewLeftButton: UIButton!
     @IBOutlet weak var learnViewRightButton: UIButton!
+    
+    @IBOutlet weak var newWordView: UIView!
+    @IBOutlet weak var newWordTitle: UILabel!
+    @IBOutlet weak var newWordButton: UIButton!
+    
+    
     
     var handle: AuthStateDidChangeListenerHandle?
     var ref: DatabaseReference!
@@ -26,7 +33,6 @@ class MainViewController: UIViewController {
         
         view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
         learnView.layer.cornerRadius = 10
-        //learnView.layer.opacity = 0.3
         learnView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         
         learnViewLeftButton.layer.cornerRadius = learnViewLeftButton.frame.height/2
@@ -36,6 +42,13 @@ class MainViewController: UIViewController {
         learnViewRightButton.layer.cornerRadius = learnViewRightButton.frame.height/2
         learnViewRightButton.layer.masksToBounds = true
         learnViewRightButton.backgroundColor = Colors.greenButton
+        
+        newWordView.layer.cornerRadius = 10
+        newWordView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
+        
+        newWordButton.layer.cornerRadius = learnViewRightButton.frame.height/2
+        newWordButton.layer.masksToBounds = true
+        newWordButton.backgroundColor = Colors.greenButton
         
         ref = Database.database().reference()
     }
@@ -69,7 +82,7 @@ class MainViewController: UIViewController {
         ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
           // Get user value
           let value = snapshot.value as? NSDictionary
-          let username = value?["username"] as? String ?? ""
+          let username = value?["userName"] as? String ?? ""
 
           CAAlert(successMessage: username + " alındı!!").show()
           }) { (error) in
@@ -77,5 +90,10 @@ class MainViewController: UIViewController {
         }
     }
 
+    
+    @IBAction func newWordButton(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "NewWordViewController") as? NewWordViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 }
 

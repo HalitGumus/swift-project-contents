@@ -8,12 +8,12 @@
 
 class LearnCard {
     var id: String
-    var author: String
+    var author: UserProfile
     var key: String
     var value: String
     var description: String
     
-    init(id:String, author:String, key:String, value:String, description:String) {
+    init(id:String, author:UserProfile, key:String, value:String, description:String) {
         self.id = id
         self.author = author
         self.key = key
