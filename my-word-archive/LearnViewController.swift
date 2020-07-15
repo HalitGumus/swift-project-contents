@@ -16,6 +16,11 @@ class LearnViewController: UIViewController {
     @IBOutlet weak var flipView: UIView!
     @IBOutlet weak var flipButton: UIButton!
     
+    var learnCards = [
+        LearnCard(id: "1", author: "Halit", key: "Some", value: "Biraz", description: "have some fun"),
+        LearnCard(id: "2", author: "Halit", key: "Time", value: "Zaman", description: "time out")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,8 +36,8 @@ class LearnViewController: UIViewController {
         
         learnValue.textColor = UIColor.white
         
-        learnKey.text = "some"
-        learnValue.text = "bazı"
+        learnKey.text = learnCards.first?.key
+        learnValue.text = learnCards.first?.value
     }
     
 }
