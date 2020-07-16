@@ -156,6 +156,8 @@ class RegisterViewController: CAViewController, UITextFieldDelegate, NVActivityI
             "photoURL": profileImageUrl.absoluteString
         ] as [String: Any]
         
+        UserService.currentUserProfile = UserProfile(uid: uid, userName: userName, photoUrl: profileImageUrl)
+        
         databaseRef.setValue(userObject) { (error, ref) in
             completion(error == nil)
         }
