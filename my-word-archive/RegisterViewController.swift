@@ -107,9 +107,6 @@ class RegisterViewController: CAViewController, UITextFieldDelegate, NVActivityI
                             
                         }
                     }
-                    
-                    
-                    
 
                 } else {
                   // Error unable to upload profile image
@@ -164,20 +161,31 @@ class RegisterViewController: CAViewController, UITextFieldDelegate, NVActivityI
         
     }
     
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        if textField == self.userNameTextField {
-//            validateUserName()
-//        }
-//        return true
-//    }
-//
-//    func validateUserName(){
-//        if userNameTextField.text?.count ?? 0 < 4 {
-//            userNameTextField.setError(NSError(domain: "", code: 100, userInfo: [NSLocalizedDescriptionKey:"Minumum 5 karakter girilmeli"]), animated: true)
-//            return
-//        }
-//        userNameTextField.setError(nil, animated: true)
-//    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == self.userNameTextField {
+            validateUserName()
+        }
+        if textField == self.passwordTextField {
+            validatePassword()
+        }
+        return true
+    }
+
+    func validateUserName(){
+        if userNameTextField.text?.count ?? 0 < 4 {
+            userNameTextField.setError(NSError(domain: "", code: 100, userInfo: [NSLocalizedDescriptionKey:"Minumum 5 karakter girilmeli"]), animated: true)
+            return
+        }
+        userNameTextField.setError(nil, animated: true)
+    }
+    
+    func validatePassword(){
+           if passwordTextField.text?.count ?? 0 < 5 {
+               passwordTextField.setError(NSError(domain: "", code: 100, userInfo: [NSLocalizedDescriptionKey:"Minumum 6 karakter girilmeli"]), animated: true)
+               return
+           }
+           passwordTextField.setError(nil, animated: true)
+       }
 }
 
 extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
