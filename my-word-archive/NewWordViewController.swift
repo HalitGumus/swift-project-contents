@@ -15,9 +15,9 @@ import NVActivityIndicatorView
 class NewWordViewController: UIViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
     
     
-    @IBOutlet weak var keyTextField: MFTextField!
-    @IBOutlet weak var valueTextField: MFTextField!
-    @IBOutlet weak var descTextField: MFTextField!
+    @IBOutlet weak var keyTextField: CACustomTextField!
+    @IBOutlet weak var valueTextField: CACustomTextField!
+    @IBOutlet weak var descTextField: CACustomTextField!
     @IBOutlet weak var addButton: CAButton!
     
     override func viewDidLoad() {
@@ -25,19 +25,8 @@ class NewWordViewController: UIViewController, UITextFieldDelegate, NVActivityIn
         
         view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
         
-        keyTextField.animatesPlaceholder = true
-        keyTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
-        keyTextField.textColor = UIColor.mf_veryDarkGray()
         keyTextField.delegate = self
-        
-        valueTextField.animatesPlaceholder = true
-        valueTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
-        valueTextField.textColor = UIColor.mf_veryDarkGray()
         valueTextField.delegate = self
-        
-        descTextField.animatesPlaceholder = true
-        descTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
-        descTextField.textColor = UIColor.mf_veryDarkGray()
         descTextField.delegate = self
     }
     

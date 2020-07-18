@@ -15,10 +15,7 @@ open class CAGradientPillButton: CAPillButton {
         
         super.init(coder: aDecoder)
         
-        self.backgroundColor = UIColor.clear
-        self.titleLabel?.textColor = Colors.defaultButton
         self.titleLabel?.font =  UIFont(name: "ProximaNovaSoft-Semibold", size: 22)
-        
         self.setGradientBackgroundLeftToRight(colorLeft: Colors.gradientStart, colorRight: Colors.gradientEnd)
         self.setTitleColor(Colors.gradientPillButtonTitle, for: .normal)
         self.layer.masksToBounds = true
