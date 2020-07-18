@@ -14,6 +14,12 @@ class CAViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = Colors.defaultBackground
+
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "back2")
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        backgroundImage.alpha = 0.2
+        self.view.insertSubview(backgroundImage, at: 0)
         
         setupUI()
     }

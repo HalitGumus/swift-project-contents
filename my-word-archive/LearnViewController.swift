@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import NVActivityIndicatorView
 
-class LearnViewController: UIViewController, NVActivityIndicatorViewable {
+class LearnViewController: CAViewController, NVActivityIndicatorViewable {
     
     @IBOutlet weak var learnView: UIView!
     @IBOutlet weak var learnKey: UILabel!
@@ -24,9 +24,7 @@ class LearnViewController: UIViewController, NVActivityIndicatorViewable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
-        
+
         learnView.layer.cornerRadius = 10
         learnView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         

@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class MainViewController: UIViewController {
+class MainViewController: CAViewController {
     
     @IBOutlet weak var headerView: UIView!
     
@@ -31,7 +31,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
         learnView.layer.cornerRadius = 10
         learnView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         
