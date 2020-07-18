@@ -9,15 +9,13 @@
 import UIKit
 
 class CAViewController: UIViewController {
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = Colors.defaultBackground
         
-        setupUi()
-        
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,8 +24,7 @@ class CAViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
-    func setupUi() {
-    }
+    func setupUI() { }
     
     func hideKeyboard(){
         view.endEditing(true)

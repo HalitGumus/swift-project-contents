@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import Firebase
 
 class UserService {
@@ -31,4 +32,46 @@ class UserService {
         })
     }
     
+    static func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url: URL?)->())){
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let storageRef = Storage.storage().reference().child("user/\(uid)")
+        
+        guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
+        
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        storageRef.putData(imageData, metadata: metaData) { metaData, error in
+            if error == nil, metaData != nil {
+                storageRef.downloadURL { (url, error) in
+                    if let downloadURL = url {
+                        completion(downloadURL)
+                    } else {
+                        completion(nil)
+                    }
+                }
+            } else {
+                completion(nil)
+            }
+            
+        }
+    }
+    
+    static func saveProfile(userName:String, profileImageUrl: URL, completion: @escaping ((_ success: Bool)->())){
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        
+        let userObject = [
+            "userName": userName,
+            "photoURL": profileImageUrl.absoluteString
+            ] as [String: Any]
+        
+        UserService.currentUserProfile = UserProfile(uid: uid, userName: userName, photoUrl: profileImageUrl)
+        
+        databaseRef.setValue(userObject) { (error, ref) in
+            completion(error == nil)
+        }
+        
+    }
 }

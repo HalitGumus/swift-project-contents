@@ -8,16 +8,21 @@
 
 import UIKit
 
-/// TDButton `UIButton`.
+/// CAButton `UIButton`.
 open class CAButton: UIButton,Borderable {
 
     required public init?(coder aDecoder: NSCoder) {
         
         super.init(coder: aDecoder)
         
-        self.backgroundColor = UIColor.clear
-        self.titleLabel?.textColor = Colors.defaultButton
+        self.backgroundColor = Colors.buttonBackground
+        self.setTitleColor(Colors.buttonText, for: .normal)
         self.titleLabel?.font =  UIFont(name: "ProximaNovaSoft-Semibold", size: 22)
+        
+        self.layer.cornerRadius = self.frame.height/2
+        self.layer.borderWidth = 1
+        self.layer.borderColor = Colors.borderColor.cgColor
+        self.layer.masksToBounds = true
     }
     
 }

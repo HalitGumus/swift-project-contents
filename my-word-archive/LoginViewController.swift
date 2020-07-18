@@ -8,30 +8,16 @@
 
 import UIKit
 import NVActivityIndicatorView
-import MaterialTextField
 import Firebase
 
-class LoginViewController: CAViewController, UITextFieldDelegate {
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var emailTextField: MFTextField!
-    @IBOutlet weak var passwordTextField: MFTextField!
+class LoginViewController: CAViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
+    
+    @IBOutlet weak var emailTextField: CACustomTextField!
+    @IBOutlet weak var passwordTextField: CACustomTextField!
     @IBOutlet weak var loginButton: CAButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
-        
-        emailTextField.animatesPlaceholder = true
-        emailTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
-        emailTextField.textColor = UIColor.mf_veryDarkGray()
-        emailTextField.delegate = self
-        
-        passwordTextField.animatesPlaceholder = true
-        passwordTextField.tintColor = UIColor(red: 232 / 255.0, green: 65 / 255.0, blue: 124 / 255.0, alpha: 1.0)
-        passwordTextField.textColor = UIColor.mf_veryDarkGray()
-        passwordTextField.delegate = self
         
     }
     
@@ -40,11 +26,12 @@ class LoginViewController: CAViewController, UITextFieldDelegate {
     }
     
     func signInWithFirebase(email:String, password:String){
+        self.startAnimating()
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard self != nil else { return }
             
             if let error = error {
-                CAAlert(errorMessage: error.localizedDescription).show()
+                self?.loginError(errorMessage: error.localizedDescription)
                 return
             }
             
@@ -53,11 +40,27 @@ class LoginViewController: CAViewController, UITextFieldDelegate {
     }
     
     func loginSuccess(){
+        self.stopAnimating()
         if let user = Auth.auth().currentUser {
-                       let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! MainViewController
-                       self.navigationController?.setViewControllers([viewController], animated: true)
+            
+            UserService.observeUserProfile(user.uid) { userProfile in
+                UserService.currentUserProfile = userProfile
+            }
+            
+            let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! MainViewController
+            self.navigationController?.setViewControllers([viewController], animated: true)
             CAAlert(successMessage: user.displayName! + " Welcome 👋👋👋").show()
         }
     }
     
+    func loginError(errorMessage: String){
+        self.stopAnimating()
+        CAAlert(errorMessage: errorMessage).show()
+        return
+    }
+    
+    override func setupUI() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    }
 }
