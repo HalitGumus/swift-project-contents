@@ -17,5 +17,6 @@ target 'my-word-archive' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'IQKeyboardManager'
+  pod 'Kingfisher'
   
 end

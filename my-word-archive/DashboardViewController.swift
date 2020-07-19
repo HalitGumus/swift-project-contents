@@ -77,7 +77,7 @@ class DashboardViewController: CAViewController, NVActivityIndicatorViewable  {
             guard let user = authResult?.user else { return }
             let isAnonymous = user.isAnonymous  // true
             let uid = user.uid
-            let userName = "Guest" + uid.suffix(5)
+            let userName = "Guest-" + uid.suffix(5)
             
             let image = #imageLiteral(resourceName: "profileImage")
             UserService.uploadProfileImage(image) { url in

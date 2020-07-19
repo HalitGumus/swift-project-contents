@@ -78,6 +78,9 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.4.0)
   - IQKeyboardManager (6.5.5)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
   - leveldb-library (1.22)
   - MaterialTextField (1.0.1)
   - nanopb (1.30905.0):
@@ -100,6 +103,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - IQKeyboardManager
+  - Kingfisher
   - MaterialTextField (~> 1.0)
   - NVActivityIndicatorView/Extended
   - SwiftLint
@@ -120,6 +124,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - IQKeyboardManager
+    - Kingfisher
     - leveldb-library
     - MaterialTextField
     - nanopb
@@ -142,6 +147,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: e121a3867449ce16b0e35ddf1797ea7a389ffdf2
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
@@ -150,6 +156,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   SwiftMessages: 29e7975b1173fd4e8357600c6518b5a59bc607d6
 
-PODFILE CHECKSUM: 414c01bc1c180261005f590d3744302376b08dfe
+PODFILE CHECKSUM: 102c6e4062e52636d8b0be11fc44b1b4190af5d8
 
 COCOAPODS: 1.9.3

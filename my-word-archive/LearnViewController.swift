@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import NVActivityIndicatorView
 
-class LearnViewController: UIViewController, NVActivityIndicatorViewable {
+class LearnViewController: CAViewController, NVActivityIndicatorViewable {
     
     @IBOutlet weak var learnView: UIView!
     @IBOutlet weak var learnKey: UILabel!
@@ -24,9 +24,7 @@ class LearnViewController: UIViewController, NVActivityIndicatorViewable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
-        
+
         learnView.layer.cornerRadius = 10
         learnView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         
@@ -54,6 +52,7 @@ class LearnViewController: UIViewController, NVActivityIndicatorViewable {
                     let dict = childSnapshot.value as? [String:Any],
                     let author = dict["author"] as? [String: Any],
                     let uid = author["uid"] as? String,
+                    let email = author["email"] as? String,
                     let userName = author["userName"] as? String,
                     let photoUrl = author["photoURL"] as? String,
                     let url = URL(string: photoUrl),
@@ -61,7 +60,7 @@ class LearnViewController: UIViewController, NVActivityIndicatorViewable {
                     let value = dict["value"] as? String,
                     let desc = dict["desc"] as? String {
                     
-                    let userProfile = UserProfile(uid: uid, userName: userName, photoUrl: url)
+                    let userProfile = UserProfile(uid: uid, email:email, userName: userName, photoUrl: url)
                     let card = LearnCard(id: childSnapshot.key, author: userProfile, key: key, value: value, description: desc)
                     tempCards.append(card)
                 }

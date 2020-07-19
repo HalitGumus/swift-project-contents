@@ -10,11 +10,13 @@ import Foundation
 
 class UserProfile {
     var uid: String
+    var email: String
     var userName: String
     var photoUrl: URL
     
-    init(uid: String, userName: String, photoUrl: URL) {
+    init(uid: String, email:String, userName: String, photoUrl: URL) {
         self.uid = uid
+        self.email = email
         self.userName = userName
         self.photoUrl = photoUrl
     }

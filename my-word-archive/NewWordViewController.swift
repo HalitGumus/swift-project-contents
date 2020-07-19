@@ -12,7 +12,7 @@ import Firebase
 import NVActivityIndicatorView
 
 
-class NewWordViewController: UIViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
+class NewWordViewController: CAViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
     
     
     @IBOutlet weak var keyTextField: CACustomTextField!
@@ -22,8 +22,6 @@ class NewWordViewController: UIViewController, UITextFieldDelegate, NVActivityIn
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.setGradientBackground(colorTop: Colors.gradientStart, colorBottom: Colors.gradientEnd)
         
         keyTextField.delegate = self
         valueTextField.delegate = self
@@ -39,6 +37,7 @@ class NewWordViewController: UIViewController, UITextFieldDelegate, NVActivityIn
         let postObject = [
             "author": [
                 "uid": userProfile.uid,
+                "email": userProfile.email,
                 "userName": userProfile.userName,
                 "photoURL": userProfile.photoUrl.absoluteString
             ],
