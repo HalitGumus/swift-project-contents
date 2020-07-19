@@ -31,6 +31,65 @@ class MainViewController: CAViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ref = Database.database().reference()
+        
+    }
+
+    @IBAction func logoutButton(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            CAAlert(successMessage: "Bye 👋👋👋").show()
+            let viewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+            self.navigationController?.setViewControllers([viewController], animated: true)
+        } catch let signoutError as NSError {
+            CAAlert(errorMessage: signoutError.localizedDescription).show()
+        }
+    }
+    
+    @IBAction func profileUpdateButton(_ sender: Any) {
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
+        vc?.isUpdateUser = true
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+    }
+    
+    
+    @IBAction func learnViewRigtButtonClick(_ sender: Any) {
+//        if let user = Auth.auth().currentUser {
+//            self.ref.child("users").child(user.uid).setValue(["username": user.displayName!])
+//            CAAlert(successMessage: user.displayName! + " eklendi!!").show()
+//        }
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LearnViewController") as? LearnViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    @IBAction func learnViewLeftButtonClick(_ sender: Any) {
+        /*
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+          // Get user value
+          let value = snapshot.value as? NSDictionary
+          let username = value?["userName"] as? String ?? ""
+
+          CAAlert(successMessage: username + " alındı!!").show()
+          }) { (error) in
+            print(error.localizedDescription)
+        }*/
+        
+    }
+
+    
+    @IBAction func newWordButton(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "NewWordViewController") as? NewWordViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    override func setupUI() {
+        
         learnView.layer.cornerRadius = 10
         learnView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         
@@ -48,51 +107,6 @@ class MainViewController: CAViewController {
         newWordButton.layer.cornerRadius = learnViewRightButton.frame.height/2
         newWordButton.layer.masksToBounds = true
         newWordButton.backgroundColor = Colors.greenButton
-        
-        ref = Database.database().reference()
-    }
-
-    @IBAction func logoutButton(_ sender: Any) {
-        let firebaseAuth = Auth.auth()
-        
-        do {
-            try firebaseAuth.signOut()
-            CAAlert(successMessage: "Bye 👋👋👋").show()
-            let viewController = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
-            self.navigationController?.setViewControllers([viewController], animated: true)
-        } catch let signoutError as NSError {
-            CAAlert(errorMessage: signoutError.localizedDescription).show()
-        }
-    }
-    
-    
-    @IBAction func learnViewRigtButtonClick(_ sender: Any) {
-//        if let user = Auth.auth().currentUser {
-//            self.ref.child("users").child(user.uid).setValue(["username": user.displayName!])
-//            CAAlert(successMessage: user.displayName! + " eklendi!!").show()
-//        }
-        
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LearnViewController") as? LearnViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
-    }
-    
-    @IBAction func learnViewLeftButtonClick(_ sender: Any) {
-        let userID = Auth.auth().currentUser?.uid
-        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-          // Get user value
-          let value = snapshot.value as? NSDictionary
-          let username = value?["userName"] as? String ?? ""
-
-          CAAlert(successMessage: username + " alındı!!").show()
-          }) { (error) in
-            print(error.localizedDescription)
-        }
-    }
-
-    
-    @IBAction func newWordButton(_ sender: Any) {
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "NewWordViewController") as? NewWordViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
 

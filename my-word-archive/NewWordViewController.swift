@@ -37,6 +37,7 @@ class NewWordViewController: CAViewController, UITextFieldDelegate, NVActivityIn
         let postObject = [
             "author": [
                 "uid": userProfile.uid,
+                "email": userProfile.email,
                 "userName": userProfile.userName,
                 "photoURL": userProfile.photoUrl.absoluteString
             ],

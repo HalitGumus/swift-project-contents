@@ -24,9 +24,10 @@ class UserService {
             
             if let dict = snapshot.value as? [String:Any],
                 let userName = dict["userName"] as? String,
+                let email = dict["email"] as? String,
                 let photoUrl = dict["photoURL"] as? String,
                 let url = URL(string: photoUrl) {
-                userProfile = UserProfile(uid: snapshot.key, userName: userName, photoUrl: url)
+                userProfile = UserProfile(uid: snapshot.key, email: email, userName: userName, photoUrl: url)
             }
             comletion(userProfile)
         })
@@ -59,15 +60,22 @@ class UserService {
     
     static func saveProfile(userName:String, profileImageUrl: URL, completion: @escaping ((_ success: Bool)->())){
         guard let uid = Auth.auth().currentUser?.uid else { return }
+        var email = ""
+        if let userEmail = Auth.auth().currentUser?.email {
+            email = userEmail
+        }else{
+            email = "guest-email"
+        }
         
         let databaseRef = Database.database().reference().child("users/profile/\(uid)")
         
         let userObject = [
             "userName": userName,
+            "email": email,
             "photoURL": profileImageUrl.absoluteString
             ] as [String: Any]
         
-        UserService.currentUserProfile = UserProfile(uid: uid, userName: userName, photoUrl: profileImageUrl)
+        UserService.currentUserProfile = UserProfile(uid: uid, email: email, userName: userName, photoUrl: profileImageUrl)
         
         databaseRef.setValue(userObject) { (error, ref) in
             completion(error == nil)
