@@ -93,7 +93,7 @@ class DashboardViewController: CAViewController, NVActivityIndicatorViewable  {
                             
                             UserService.saveProfile(userName: userName, profileImageUrl: url!) { success in
                                 if success {
-                                    CAAlert(errorMessage: "Profil kaydedildi!").show()
+                                    CAAlert(successMessage: "Profil kaydedildi!").show()
                                 }
                             }
                             

@@ -84,9 +84,10 @@ class LearnViewController: CAViewController, NVActivityIndicatorViewable {
     }
     
     func updateCard(){
-        self.learnKey.text = self.learnCards[cardNumber].key
-        self.learnValue.text = cardType ? self.learnCards[cardNumber].value : self.learnCards[cardNumber].description
-        
+        if learnCards.count > 0 {
+            self.learnKey.text = self.learnCards[cardNumber].key
+            self.learnValue.text = cardType ? self.learnCards[cardNumber].value : self.learnCards[cardNumber].description
+        }
     }
     
 }
