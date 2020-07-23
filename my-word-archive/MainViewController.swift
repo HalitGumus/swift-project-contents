@@ -51,7 +51,6 @@ class MainViewController: CAViewController {
     @IBAction func profileUpdateButton(_ sender: Any) {
         
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
-        vc?.isUpdateUser = true
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }
