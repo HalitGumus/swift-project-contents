@@ -25,16 +25,18 @@ class RegisterViewController: CAViewController, UITextFieldDelegate, NVActivityI
     
     var imagePicker: UIImagePickerController!
     var isUpdateUser = false
+    var isAnonymousUser = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let userProfile = UserService.currentUserProfile {
             setUserProfile(userProfile)
-            
+            isUpdateUser = true
             let firebaseAuth = Auth.auth()
             guard let user = firebaseAuth.currentUser else { return }
             if user.isAnonymous {
+                isAnonymousUser = true
                 loginButton.setTitle("Create account", for: .normal)
             }
             loginButton.setTitle("Update profile", for: .normal)
@@ -47,8 +49,11 @@ class RegisterViewController: CAViewController, UITextFieldDelegate, NVActivityI
     
     @IBAction func registerButton(_ sender: Any) {
         if isUpdateUser {
-            
-            self.updateAnonymousUser(userName:userNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!)
+            if isAnonymousUser {
+                self.updateAnonymousUser(userName:userNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!)
+                return
+            }
+            updateProfile()
             return
         }
         signUpWithFirebase(userName:userNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!)
