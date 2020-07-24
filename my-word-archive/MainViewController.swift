@@ -23,8 +23,6 @@ class MainViewController: CAViewController {
     @IBOutlet weak var newWordTitle: UILabel!
     @IBOutlet weak var newWordButton: UIButton!
     
-    
-    
     var handle: AuthStateDidChangeListenerHandle?
     var ref: DatabaseReference!
     
@@ -34,7 +32,7 @@ class MainViewController: CAViewController {
         ref = Database.database().reference()
         
     }
-
+    
     @IBAction func logoutButton(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         
@@ -49,18 +47,16 @@ class MainViewController: CAViewController {
     }
     
     @IBAction func profileUpdateButton(_ sender: Any) {
-        
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
         self.navigationController?.pushViewController(vc!, animated: true)
-        
     }
     
     
     @IBAction func learnViewRigtButtonClick(_ sender: Any) {
-//        if let user = Auth.auth().currentUser {
-//            self.ref.child("users").child(user.uid).setValue(["username": user.displayName!])
-//            CAAlert(successMessage: user.displayName! + " eklendi!!").show()
-//        }
+        //        if let user = Auth.auth().currentUser {
+        //            self.ref.child("users").child(user.uid).setValue(["username": user.displayName!])
+        //            CAAlert(successMessage: user.displayName! + " eklendi!!").show()
+        //        }
         
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LearnViewController") as? LearnViewController
         self.navigationController?.pushViewController(vc!, animated: true)
@@ -68,19 +64,19 @@ class MainViewController: CAViewController {
     
     @IBAction func learnViewLeftButtonClick(_ sender: Any) {
         /*
-        let userID = Auth.auth().currentUser?.uid
-        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-          // Get user value
-          let value = snapshot.value as? NSDictionary
-          let username = value?["userName"] as? String ?? ""
-
-          CAAlert(successMessage: username + " alındı!!").show()
-          }) { (error) in
-            print(error.localizedDescription)
-        }*/
+         let userID = Auth.auth().currentUser?.uid
+         ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+         // Get user value
+         let value = snapshot.value as? NSDictionary
+         let username = value?["userName"] as? String ?? ""
+         
+         CAAlert(successMessage: username + " alındı!!").show()
+         }) { (error) in
+         print(error.localizedDescription)
+         }*/
         
     }
-
+    
     
     @IBAction func newWordButton(_ sender: Any) {
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "NewWordViewController") as? NewWordViewController
