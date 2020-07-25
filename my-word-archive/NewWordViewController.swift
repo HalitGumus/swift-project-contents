@@ -44,7 +44,7 @@ class NewWordViewController: CAViewController, UITextFieldDelegate, NVActivityIn
             "key": keyTextField.text!,
             "value": valueTextField.text!,
             "desc": descTextField.text!
-        ] as [String:Any]
+            ] as [String:Any]
         
         self.startAnimating()
         postRef.setValue(postObject, withCompletionBlock: { error, ref in

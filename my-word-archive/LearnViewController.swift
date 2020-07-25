@@ -24,7 +24,7 @@ class LearnViewController: CAViewController, NVActivityIndicatorViewable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         learnView.layer.cornerRadius = 10
         learnView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         
