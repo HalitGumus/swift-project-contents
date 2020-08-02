@@ -4,3 +4,5 @@ Pod install
 
 
 10-20 Language support
+
+New theme
