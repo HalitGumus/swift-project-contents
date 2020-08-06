@@ -6,3 +6,5 @@ Pod install
 10-20 Language support
 
 Dark-White theme
+
+New features
