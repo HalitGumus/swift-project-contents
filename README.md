@@ -12,3 +12,5 @@ New features
 Pod framework
 
 Swiftui
+
+Settings and profile
