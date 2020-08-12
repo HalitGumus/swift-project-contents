@@ -15,4 +15,4 @@ Swiftui
 
 Settings and profile
 
-ios comp
+ios components
