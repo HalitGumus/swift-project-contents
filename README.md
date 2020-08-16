@@ -19,4 +19,4 @@ ios components
 
 Tutorial
 
-Rxswift
+RxSwift
