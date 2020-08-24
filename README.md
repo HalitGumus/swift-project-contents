@@ -32,3 +32,5 @@ Widget
 Landing
 
 Top10
+
+Settings
