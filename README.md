@@ -34,3 +34,7 @@ Landing
 Top10
 
 Settings
+
+Splash
+
+
