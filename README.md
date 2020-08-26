@@ -37,4 +37,5 @@ Settings
 
 Splash
 
+Contact us
 
