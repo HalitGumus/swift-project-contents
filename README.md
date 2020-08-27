@@ -39,3 +39,4 @@ Splash
 
 Contact us
 
+Crash log & Console Log
