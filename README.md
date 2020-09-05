@@ -52,3 +52,5 @@ Pod file
 Fastlane
 
 Words game
+
+New version
