@@ -54,3 +54,5 @@ Fastlane
 Words game
 
 New version
+
+Rate
