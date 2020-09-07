@@ -56,3 +56,5 @@ Words game
 New version
 
 Rate
+
+Logo
