@@ -60,3 +60,5 @@ Rate
 Logo
 
 Network Test/Prod
+
+Firebase text insert delete & photo
