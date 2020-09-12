@@ -66,3 +66,5 @@ Firebase text insert delete & photo
 UI Test
 
 Share with photo
+
+Code coverage and document
