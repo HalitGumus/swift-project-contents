@@ -82,3 +82,5 @@ Dasboard slider
 Drawer
 
 UI Core
+
+Macos
