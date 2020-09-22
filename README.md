@@ -84,3 +84,5 @@ Drawer
 UI Core
 
 Macos
+
+App store search top control
