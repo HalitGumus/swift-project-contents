@@ -87,4 +87,5 @@ Macos app support
 
 App store search top control
 
+Core libs
 
