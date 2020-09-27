@@ -90,3 +90,5 @@ App store search top control
 Core libs
 
 Storage and settingsUtility
+
+App name
