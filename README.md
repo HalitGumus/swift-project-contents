@@ -92,3 +92,5 @@ Core libs
 Storage and settingsUtility
 
 App name
+
+Clean swift
