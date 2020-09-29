@@ -94,3 +94,5 @@ Storage and settingsUtility
 App name
 
 Clean swift
+
+Base class
