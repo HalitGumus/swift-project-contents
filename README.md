@@ -96,3 +96,5 @@ App name
 Clean swift
 
 Base class
+
+Share card
