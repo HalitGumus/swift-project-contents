@@ -108,3 +108,5 @@ React
 Version controll firebase
 
 Firebase Log
+
+Slider
