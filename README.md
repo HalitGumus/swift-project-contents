@@ -112,3 +112,5 @@ Firebase Log
 Slider
 
 500 word
+
+Public / private
