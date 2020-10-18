@@ -113,4 +113,6 @@ Slider
 
 500 word
 
-Public / private
+Public / private func
+
+
