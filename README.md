@@ -115,4 +115,6 @@ Slider
 
 Public / private func
 
+Swiftlint
+
 
