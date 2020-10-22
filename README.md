@@ -118,3 +118,5 @@ Public / private func
 Swiftlint
 
 Commit style
+
+MacOS
