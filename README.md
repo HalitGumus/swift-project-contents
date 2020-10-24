@@ -120,3 +120,7 @@ Swiftlint
 Commit style
 
 MacOS
+
+Services test
+
+String theme
