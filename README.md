@@ -124,3 +124,5 @@ MacOS
 Services test
 
 String theme
+
+Photo lib
