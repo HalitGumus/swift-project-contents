@@ -133,7 +133,7 @@ View hierarsh
 
 Device control
 
-Viewutilty
+View utilty
 
 Base system
 
