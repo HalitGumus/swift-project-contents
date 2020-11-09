@@ -138,3 +138,5 @@ View utilty
 Base system
 
 Sonarqube
+
+Daily card
