@@ -140,3 +140,5 @@ Base system
 Sonarqube
 
 Daily card
+
+Models
