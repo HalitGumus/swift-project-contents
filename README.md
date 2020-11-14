@@ -142,3 +142,5 @@ Sonarqube
 Daily card
 
 Models
+
+Version
