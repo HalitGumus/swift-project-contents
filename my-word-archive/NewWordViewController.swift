@@ -11,10 +11,8 @@ import MaterialTextField
 import Firebase
 import NVActivityIndicatorView
 
-
 class NewWordViewController: CAViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
-    
-    
+
     @IBOutlet weak var keyTextField: CACustomTextField!
     @IBOutlet weak var valueTextField: CACustomTextField!
     @IBOutlet weak var descTextField: CACustomTextField!
@@ -39,12 +37,10 @@ class NewWordViewController: CAViewController, UITextFieldDelegate, NVActivityIn
                 "uid": userProfile.uid,
                 "email": userProfile.email,
                 "userName": userProfile.userName,
-                "photoURL": userProfile.photoUrl.absoluteString
-            ],
+                "photoURL": userProfile.photoUrl.absoluteString],
             "key": keyTextField.text!,
             "value": valueTextField.text!,
-            "desc": descTextField.text!
-            ] as [String:Any]
+            "desc": descTextField.text!] as [String:Any]
         
         self.startAnimating()
         postRef.setValue(postObject, withCompletionBlock: { error, ref in
